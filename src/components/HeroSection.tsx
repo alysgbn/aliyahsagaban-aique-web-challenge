@@ -13,8 +13,8 @@ const HeroSection = () => {
       </div>
       {/* Hero Texts  */}
       <p className="text-[29px] font-semibold tracking-wide text-primary-blue md:text-xxxl lg:text-xxxl lg:tracking-wider">Build and Launch Reliable and Market-Ready Products</p>
-      <p className="px-[24px] text-base sm:text-[14px] md:text-[14px] lg:text-[14px]">
-        This 2025, Aique DANG aims to optimize internal structures and processes, ensuring enhanced reliability, integrity, and efficiency, ultimately driving increased profitability <br /> for its
+      <p className="px-[24px] text-base sm:text-[14px] md:text-[14px] lg:text-[14px] lg:w-[1220px]">
+        This 2025, Aique DANG aims to optimize internal structures and processes, ensuring enhanced reliability, integrity, and efficiency, ultimately driving increased profitability for its
         clients.
       </p>
       {/* Check Solutions Button  */}

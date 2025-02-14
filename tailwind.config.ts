@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'], 
+        inter: ['Inter', 'sans-serif'],
       },
       fontSize: {
         xxl: '42px',
@@ -24,6 +24,10 @@ export default {
           'blue-light-3': '#ADBCF2',
           'blue-light-4': '#C3CEF6',
           'blue-light-5': '#E1E8FF',
+        },
+        secondary: {
+          gray: '#637381',
+          purple: '#D4CBFF66'
         },
         fuschia: {
           50: '#EDE5EF',

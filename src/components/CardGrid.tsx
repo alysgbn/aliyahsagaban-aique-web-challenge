@@ -67,7 +67,7 @@ const CardGrid: React.FC = () => {
             {/* Card Content */}
             <div className="flex flex-col items-center gap-4 p-[32px] text-center">
               <h1 className="max-w-[300px] text-lg font-bold">{title}</h1>
-              <p>{description}</p>
+              <p className='text-secondary-gray'>{description}</p>
               <Button label="View Details" variant={index !== 0 ? 'outlined' : 'default'} />
             </div>
           </div>

@@ -12,11 +12,11 @@ const ContactForm = () => {
         <div className="absolute right-[-50px] top-[-30px] h-[176px] w-[176px] rounded-[110px] bg-[radial-gradient(50%_50%_at_50%_50%,#2D68F8_0%,#E72DF8_100%)] blur-[30px]"></div>
 
         {/* Bottom Left Glow */}
-        <div className="absolute bottom-[-70px] left-[-50px] h-[176px] w-[176px] rounded-[110px] bg-[radial-gradient(50%_50%_at_50%_50%,#2D68F8_0%,#E72DF8_100%)] blur-[40px]"></div>
+        <div className="absolute bottom-[-70px] left-[-50px] h-[176px] w-[176px] rounded-[110px] bg-[radial-gradient(50%_50%_at_50%_50%,#2D68F8_0%,#E72DF8_100%)] blur-[50px]"></div>
       </div>
 
       {/* Card Container */}
-      <div className="relative w-full max-w-[686px] rounded-lg bg-[#D4CBFF66] p-6 backdrop-blur-[17px]">
+      <div className="relative w-full max-w-[686px] rounded-lg bg-secondary-purple p-6 backdrop-blur-[17px]">
         <p className="pb-[24px] text-lg font-bold">Send us a message</p>
 
         {/* Card form  */}
