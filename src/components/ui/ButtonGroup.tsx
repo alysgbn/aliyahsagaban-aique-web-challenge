@@ -12,9 +12,9 @@ const ButtonGroup = ({ label, icon, onClick, variant }: ButtonGroupProps) => {
       onClick={onClick}
       className={`flex flex-row items-center justify-center gap-2 rounded-lg px-[24px] py-[8px] outline-none transition-all duration-200 ease-in-out ${
         // Design for white and default variant
-        variant === 'white' ? 'border border-[#DFE4EA] bg-white' : 'w-max border border-transparent bg-primary-blueDark text-white hover:bg-opacity-90'
+        variant === 'white' ? 'border border-[#DFE4EA] bg-white' : `w-max border border-transparent ${!label ? 'bg-primary-blue' : 'bg-primary-blueDark'} text-white hover:bg-opacity-90`
         // For buttongroup icon only
-      }  ${!label && '!w-[50px] !px-0 py-0'} `}
+      } ${!label && '!w-[50px] !px-0 py-0'} `}
     >
       {icon && <span>{icon}</span>}
       {label}
