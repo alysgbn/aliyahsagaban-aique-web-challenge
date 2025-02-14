@@ -11,9 +11,11 @@ const Button = ({ variant = 'default', label, onClick, fullWidth }: ButtonProps)
     <button
       onClick={onClick}
       className={`cursor-pointer rounded-full px-7 py-3 transition-all duration-100 ease-in-out ${
+        // Design for 'default' variant
         variant === 'default'
           ? 'border border-transparent bg-primary-blue text-white hover:bg-opacity-90'
-          : 'border border-black bg-transparent text-black hover:border-primary-blue hover:bg-primary-blue hover:text-white'
+          : // Design for 'outlined' variant
+            'border border-black bg-transparent text-black hover:border-primary-blue hover:bg-primary-blue hover:text-white'
       } ${fullWidth ? 'w-full' : ''}`}
     >
       {label}

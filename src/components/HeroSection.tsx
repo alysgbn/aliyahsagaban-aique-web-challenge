@@ -19,7 +19,7 @@ const HeroSection = () => {
       </p>
       {/* Check Solutions Button  */}
       <div className="pt-3">
-        <ButtonGroup label="Check our solutions" icon={<Image src={SolutionsSvg} alt="Solutions Icon" />} />
+        <ButtonGroup label="Check our solutions" variant='white' icon={<Image src={SolutionsSvg} alt="Solutions Icon" />} />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-
+// Custom made Input component
 const Input = ({ id, label, type }: { id: string; label: string; type: string }) => {
   const [value, setValue] = useState(''); // Track input value
-  const [isFocused, setIsFocused] = useState(false);
+  const [isFocused, setIsFocused] = useState(false); // Check if input is focused or not
 
   return (
     <div className="flex flex-col">

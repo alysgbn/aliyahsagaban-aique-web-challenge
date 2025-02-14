@@ -1,17 +1,19 @@
 import React from 'react';
+// Custom made button group component
 type ButtonGroupProps = {
   label?: string;
   icon?: React.ReactNode;
   onClick?: () => void;
-  variant?: 'default' | 'ghost';
+  variant?: 'default' | 'white';
 };
 const ButtonGroup = ({ label, icon, onClick, variant }: ButtonGroupProps) => {
   return (
     <button
       onClick={onClick}
-      className={`flex flex-row gap-2 items-center justify-center rounded-lg px-[24px] py-[8px] outline-none transition-all duration-200 ease-in-out ${
-        variant === 'ghost' ? 'bg-transparent hover:border hover:border-primary-blue hover:text-primary-blue' : 'border border-transparent bg-primary-blue text-white hover:bg-opacity-90'
-      } ${icon && label ? 'w-max bg-primary-blueDark ' : 'max-w-[88px]'} ${label ? 'w-full' : 'w-full !max-w-[50px] !px-0 !py-0'}`}
+      className={`flex flex-row items-center justify-center gap-2 rounded-lg px-[24px] py-[8px] outline-none transition-all duration-200 ease-in-out ${
+        // Design for white and default variant
+        variant === 'white' ? 'border border-[#DFE4EA] bg-white' : 'w-max border border-transparent bg-primary-blueDark text-white hover:bg-opacity-90'
+      } `}
     >
       {icon && <span>{icon}</span>}
       {label}
