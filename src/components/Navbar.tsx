@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between py-3 sm:px-4 md:px-6 lg:px-8">
       {/* Logo  */}
       <div className="relative h-[32px] w-[32px]">
-        <Image src={aiqueLogo} alt="aique-logo" fill className="object-contain" />
+        <Image src={aiqueLogo} alt="aique-logo" fill className="object-contain" loading="lazy"/>
       </div>
 
       {/* Navigation links  */}

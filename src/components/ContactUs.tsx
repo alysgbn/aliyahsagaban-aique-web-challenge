@@ -20,7 +20,7 @@ const ContactUs = () => {
             .fill(true)
             .map((_, i) => (
               <div key={i} className="flex gap-3">
-                <ButtonGroup icon={<Image src={HouseSvg} alt="House Icon" />} />
+                <ButtonGroup icon={<Image src={HouseSvg} alt="House Icon" loading="lazy"/>} />
                 <div>
                   <p className="text-base font-bold">Our Location</p>
                   <p>One World Place, Lane R, BGC</p>

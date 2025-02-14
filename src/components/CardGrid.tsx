@@ -58,11 +58,11 @@ const CardGrid: React.FC = () => {
         onMouseMove={handleMouseMove}
       >
         {cardImages.map((cardImage, index) => (
-            // Card Container
+          // Card Container
           <div key={index} className="w-[370px] flex-shrink-0 overflow-hidden rounded-lg shadow-[0px_1px_3px_0px_rgba(166,175,195,0.4)] transition-transform duration-300 ease-out">
             {/* Card Image */}
             <div className="pointer-events-none relative h-[230px] w-[370px]">
-              <Image src={cardImage} alt={`card-${index}`} fill className="object-cover" />
+              <Image src={cardImage} alt={`card-${index}`} fill className="object-cover" loading="lazy"/>
             </div>
             {/* Card Content */}
             <div className="flex flex-col items-center gap-4 p-[32px] text-center">
