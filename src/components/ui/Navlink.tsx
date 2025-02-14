@@ -1,15 +1,16 @@
+import Link from 'next/link';
 import React from 'react';
 
 type NavlinkProps = {
   label?: string;
   icon?: React.ReactNode;
-  onClick?: () => void;
+  href?: string;
   variant?: 'default' | 'ghost' | 'link';
 };
-const Navlink = ({ label, icon, onClick, variant }: NavlinkProps) => {
+const Navlink = ({ label, icon, href, variant }: NavlinkProps) => {
   return (
-    <button
-      onClick={onClick}
+    <Link
+      href={href || '#'}
       className={`flex max-w-[88px] flex-row items-center justify-center gap-2 rounded-lg px-[24px] py-[8px] outline-none transition-all duration-200 ease-in-out ${
         //    Design for 'ghost' variant
         variant === 'ghost'
@@ -23,7 +24,7 @@ const Navlink = ({ label, icon, onClick, variant }: NavlinkProps) => {
     >
       {icon && <span>{icon}</span>}
       {label}
-    </button>
+    </Link>
   );
 };
 
